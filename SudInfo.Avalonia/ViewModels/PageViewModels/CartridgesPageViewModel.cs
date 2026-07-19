@@ -52,6 +52,22 @@ public partial class CartridgesPageViewModel : BaseRoutableViewModel
         await ExcelService.CreateExcelTableFromEntity(Cartridges);
     }
 
+    public async Task ReadExcelTable()
+    {
+        var importedCatridges = await ExcelService.ReadExcelTableFromFile<Cartridge>();
+        if (importedCatridges == null || importedCatridges.Count == 0) return;
+        
+        var saveResult = await _cartridgeService.AddRange(importedCatridges);
+        if (saveResult.Success)
+        {
+            await LoadCartridges();
+        }
+        else 
+        {
+            await DialogService.ShowErrorMessageBox(saveResult.Message);
+        }
+    }
+
     public async Task OpenEditCartridgeWindow()
     {
         if (SelectedCartridge == null)
@@ -62,6 +78,7 @@ public partial class CartridgesPageViewModel : BaseRoutableViewModel
 
     public async Task OpenAddCartridgeWindow()
     {
+        NewCartridge = new Cartridge();
         await _navigationService.ShowCartridgeWindowDialog(WindowType.Add, EventHandlerClosedWindowDialog);
     }
 

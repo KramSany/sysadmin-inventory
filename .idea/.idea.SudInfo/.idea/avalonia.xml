@@ -5,6 +5,7 @@
       <map>
         <entry key="SudInfo.Avalonia/Views/Pages/AppsPage.axaml" value="SudInfo.Avalonia/SudInfo.Avalonia.csproj" />
         <entry key="SudInfo.Avalonia/Views/Pages/CartridgesPage.axaml" value="SudInfo.Avalonia/SudInfo.Avalonia.csproj" />
+        <entry key="SudInfo.Avalonia/Views/Pages/ComputersPage.axaml" value="SudInfo.Avalonia/SudInfo.Avalonia.csproj" />
       </map>
     </option>
   </component>

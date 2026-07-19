@@ -3,13 +3,45 @@ namespace SudInfo.Avalonia.Services;
 public class CartridgeService(
     SudInfoDatabaseContext context) : BaseService<Cartridge>(context)
 {
+    
+    public override async Task<Result> Add(Cartridge cartridge)
+    {
+        try
+        {
+            context.ChangeTracker.Clear();
+            context.Entry(cartridge).State = EntityState.Added;
+            await context.AddAsync(cartridge);
+            await context.SaveChangesAsync();
+            return new Result(true);
+        }
+        catch (Exception ex)
+        {
+            return new Result(message: ex.Message);
+        }
+    }
+    
+    public async Task<Result> AddRange(IEnumerable<Cartridge> catridges)
+    {
+        try
+        {
+            context.ChangeTracker.Clear();
+            await context.Cartridges.AddRangeAsync(catridges);
+            await context.SaveChangesAsync();
+            return new Result(true);
+        }
+        catch (Exception ex)
+        {
+            return new Result(message: ex.Message);
+        }
+    }
+    
     public async Task<Result> Remove(int id)
     {
         try
         {
-            var cartridge = await context.Cartridges.AsNoTracking()
+            
+            var cartridge = await context.Cartridges
                 .FirstAsync(x => x.Id == id);
-            context.Entry(cartridge).State = EntityState.Deleted;
             context.Cartridges.Remove(cartridge);
             await context.SaveChangesAsync();
             return new Result(true);
@@ -40,6 +72,12 @@ public class CartridgeService(
         return await context.Cartridges.AsNoTracking()
             .ToListAsync();
     }
+    
+    public void ClearTracker()
+    {
+        context.ChangeTracker.Clear();
+    }
+
 
     #endregion
 }
