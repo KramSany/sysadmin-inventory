@@ -1,0 +1,14 @@
+C:\Users\caha1\RiderProjects\sysadmin-inventory-main\src\SudInfo.EfDataAccessLibrary\bin\Debug\net10.0\SudInfo.EfDataAccessLibrary.deps.json
+C:\Users\caha1\RiderProjects\sysadmin-inventory-main\src\SudInfo.EfDataAccessLibrary\bin\Debug\net10.0\SudInfo.EfDataAccessLibrary.runtimeconfig.json
+C:\Users\caha1\RiderProjects\sysadmin-inventory-main\src\SudInfo.EfDataAccessLibrary\bin\Debug\net10.0\SudInfo.EfDataAccessLibrary.dll
+C:\Users\caha1\RiderProjects\sysadmin-inventory-main\src\SudInfo.EfDataAccessLibrary\bin\Debug\net10.0\SudInfo.EfDataAccessLibrary.pdb
+C:\Users\caha1\RiderProjects\sysadmin-inventory-main\src\SudInfo.EfDataAccessLibrary\obj\Debug\net10.0\SudInfo.EfDataAccessLibrary.csproj.AssemblyReference.cache
+C:\Users\caha1\RiderProjects\sysadmin-inventory-main\src\SudInfo.EfDataAccessLibrary\obj\Debug\net10.0\SudInfo.EfDataAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\caha1\RiderProjects\sysadmin-inventory-main\src\SudInfo.EfDataAccessLibrary\obj\Debug\net10.0\SudInfo.EfDataAccessLibrary.AssemblyInfoInputs.cache
+C:\Users\caha1\RiderProjects\sysadmin-inventory-main\src\SudInfo.EfDataAccessLibrary\obj\Debug\net10.0\SudInfo.EfDataAccessLibrary.AssemblyInfo.cs
+C:\Users\caha1\RiderProjects\sysadmin-inventory-main\src\SudInfo.EfDataAccessLibrary\obj\Debug\net10.0\SudInfo.EfDataAccessLibrary.csproj.CoreCompileInputs.cache
+C:\Users\caha1\RiderProjects\sysadmin-inventory-main\src\SudInfo.EfDataAccessLibrary\obj\Debug\net10.0\SudInfo.EfDataAccessLibrary.dll
+C:\Users\caha1\RiderProjects\sysadmin-inventory-main\src\SudInfo.EfDataAccessLibrary\obj\Debug\net10.0\refint\SudInfo.EfDataAccessLibrary.dll
+C:\Users\caha1\RiderProjects\sysadmin-inventory-main\src\SudInfo.EfDataAccessLibrary\obj\Debug\net10.0\SudInfo.EfDataAccessLibrary.pdb
+C:\Users\caha1\RiderProjects\sysadmin-inventory-main\src\SudInfo.EfDataAccessLibrary\obj\Debug\net10.0\SudInfo.EfDataAccessLibrary.genruntimeconfig.cache
+C:\Users\caha1\RiderProjects\sysadmin-inventory-main\src\SudInfo.EfDataAccessLibrary\obj\Debug\net10.0\ref\SudInfo.EfDataAccessLibrary.dll

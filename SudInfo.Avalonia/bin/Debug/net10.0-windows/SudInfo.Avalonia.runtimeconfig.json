@@ -1,0 +1,18 @@
+{
+  "runtimeOptions": {
+    "tfm": "net10.0",
+    "framework": {
+      "name": "Microsoft.NETCore.App",
+      "version": "10.0.0"
+    },
+    "configProperties": {
+      "Avalonia.Diagnostics.Diagnostic.IsEnabled": true,
+      "System.Diagnostics.Metrics.Meter.IsSupported": true,
+      "System.Reflection.NullabilityInfoContext.IsSupported": true,
+      "System.Runtime.InteropServices.BuiltInComInterop.IsSupported": true,
+      "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false,
+      "CSWINRT_USE_WINDOWS_UI_XAML_PROJECTIONS": false,
+      "AvaloniaUI.Licensing.RuntimeKey_0": "AQAAAK0AAAAfiwgAAAAAAAADbY6xCsJAEEQv2NgIdkFB/+CCYhewEIVUdqL15m6RxfM27N0Z/Ez/yATFJk7zYB4DkymlKvXJaL1Z9Xy127xn1nfgn+OOC3iAY0+gwRh0KBBRO6oFhDDku68t9uyjsAvFES3BbNhfsD4TtvM/C5Cb5dYvh+okiAeIUAnZaSNsk4llnQJ5DCH/XWtAum/asA/scJICXLGU5CPd8Q3tkzfY6QAAAAABAAB/Eu4v5V8BBeC2N06m2osvZONPLEyFghEnzaZVLWutAdMlB4v0oRAk9jgl7rVK0OQwZwdKX0bUw8V7ATTyp7r4Ltgmy1JFiSfaeZgmcy0rGypTXcCZA9xP/iVAemwQHZjAJnkFjpjNpAzsIouBBllXeeUH04g7AkoBvyF+zLTO9NGgAaQZgKydA4pTII54XAwlvWBLihx6kWuBL5yFRbkCMQuePyUyICipP9EhI/oWTcvo9f02lFBJWYuogCwv4l35Gr6bWW8MuCVGptB3vZHMZ+qFmSJ8mWalRx8XBiYPKSbHscZzwTPiuUENbw/WmkD4oIAgANk2wezW9mL4cWW2"
+    }
+  }
+}
