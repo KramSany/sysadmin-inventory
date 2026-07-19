@@ -1,0 +1,58 @@
+<Application
+    x:Class="SudInfo.Avalonia.App"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:converters="using:SudInfo.Avalonia.Converters"
+    RequestedThemeVariant="Light">
+    <Application.Styles>
+        <FluentTheme />
+        <StyleInclude Source="avares://Avalonia.Controls.DataGrid/Themes/Fluent.xaml" />
+        <StyleInclude
+            Source="avares://Avalonia.Controls.TreeDataGrid/Themes/Fluent.axaml" />
+        <!--#region Styles-->
+        <Style Selector="Button">
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+        <Style Selector="Window">
+            <Setter Property="Icon" Value="/Assets/Icons/logo.ico" />
+        </Style>
+        <Style Selector="CheckBox">
+            <Setter Property="Cursor" Value="Hand" />
+        </Style>
+        <Style Selector="TextBox">
+            <Setter Property="UseFloatingPlaceholder" Value="True" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+        </Style>
+        <Style Selector="Image">
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Height" Value="30" />
+        </Style>
+        <Style Selector="DataGrid">
+            <Setter Property="Margin" Value="0 0 0 5" />
+            <Setter Property="IsReadOnly" Value="True" />
+        </Style>
+        <Style Selector="StackPanel">
+            <Setter Property="Spacing" Value="2" />
+        </Style>
+        <!--#endregion-->
+        <!--#region Styles classes-->
+        <Style Selector="TextBlock.PageHeader">
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="FontSize" Value="20" />
+        </Style>
+        <Style Selector="Border.BorderStyle">
+            <Setter Property="BorderBrush" Value="DarkOrange" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Padding" Value="3" />
+            <Setter Property="Margin" Value="3" />
+            <Setter Property="CornerRadius" Value="10" />
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+        </Style>
+        <!--#endregion-->
+    </Application.Styles>
+    <Application.Resources>
+        <converters:UriAssetToBitmapConverter x:Key="UriAssetToBitmapConverter" />
+    </Application.Resources>
+</Application>
