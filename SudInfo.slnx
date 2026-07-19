@@ -5,10 +5,10 @@
         <BuildType Name="Release" />
     </Configurations>
     <Folder Name="/src/">
-        <Project Path="SudInfo.Avalonia/SudInfo.Avalonia.csproj">
+        <Project Path="src/SudInfo.Avalonia/SudInfo.Avalonia.csproj">
             <BuildType Solution="All|*" Project="Debug" />
         </Project>
-        <Project Path="SudInfo.EfDataAccessLibrary/SudInfo.EfDataAccessLibrary.csproj">
+        <Project Path="src/SudInfo.EfDataAccessLibrary/SudInfo.EfDataAccessLibrary.csproj">
             <BuildType Solution="All|*" Project="Debug" />
         </Project>
     </Folder>
