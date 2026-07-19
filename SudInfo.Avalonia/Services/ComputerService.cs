@@ -25,9 +25,8 @@ public class ComputerService(
     {
         try
         {
-            var computer = await context.Computers.AsNoTracking()
+            var computer = await context.Computers
                 .SingleOrDefaultAsync(x => x.Id == id) ?? throw new Exception("Computer not found");
-            context.Entry(computer).State = EntityState.Deleted;
             context.Remove(computer);
             await context.SaveChangesAsync();
             return new Result(true);
@@ -42,13 +41,12 @@ public class ComputerService(
     {
         try
         {
+            context.ChangeTracker.Clear();
             foreach (var computer in computers)
             {
                 if (computer.User != null)
                     computer.User = await context.Users.AsNoTracking()
                         .SingleOrDefaultAsync(x => x.Id == computer.User.Id);
-            
-                context.Entry(computer).State = EntityState.Added;
             }
 
             await context.Computers.AddRangeAsync(computers);

@@ -3286,11 +3286,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\src\\SudInfo.EfDataAccessLibrary\\SudInfo.EfDataAccessLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\SudInfo.EfDataAccessLibrary\\SudInfo.EfDataAccessLibrary.csproj",
       "projectName": "SudInfo.EfDataAccessLibrary",
-      "projectPath": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\src\\SudInfo.EfDataAccessLibrary\\SudInfo.EfDataAccessLibrary.csproj",
+      "projectPath": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\SudInfo.EfDataAccessLibrary\\SudInfo.EfDataAccessLibrary.csproj",
       "packagesPath": "C:\\Users\\caha1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\src\\SudInfo.EfDataAccessLibrary\\obj\\",
+      "outputPath": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\SudInfo.EfDataAccessLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

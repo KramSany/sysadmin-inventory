@@ -3633,11 +3633,11 @@
   "project": {
     "version": "2.6.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\src\\SudInfo.Avalonia\\SudInfo.Avalonia.csproj",
+      "projectUniqueName": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\SudInfo.Avalonia\\SudInfo.Avalonia.csproj",
       "projectName": "SudInfo.Avalonia",
-      "projectPath": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\src\\SudInfo.Avalonia\\SudInfo.Avalonia.csproj",
+      "projectPath": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\SudInfo.Avalonia\\SudInfo.Avalonia.csproj",
       "packagesPath": "C:\\Users\\caha1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\src\\SudInfo.Avalonia\\obj\\",
+      "outputPath": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\SudInfo.Avalonia\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3659,8 +3659,8 @@
         "net10.0-windows7.0": {
           "targetAlias": "net10.0-windows",
           "projectReferences": {
-            "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\src\\SudInfo.EfDataAccessLibrary\\SudInfo.EfDataAccessLibrary.csproj": {
-              "projectPath": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\src\\SudInfo.EfDataAccessLibrary\\SudInfo.EfDataAccessLibrary.csproj"
+            "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\SudInfo.EfDataAccessLibrary\\SudInfo.EfDataAccessLibrary.csproj": {
+              "projectPath": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\SudInfo.EfDataAccessLibrary\\SudInfo.EfDataAccessLibrary.csproj"
             }
           }
         }

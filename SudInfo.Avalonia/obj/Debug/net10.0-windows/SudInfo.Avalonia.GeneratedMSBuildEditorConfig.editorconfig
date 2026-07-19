@@ -9,7 +9,7 @@ build_property.AvaloniaNameGeneratorAttachDevTools = true
 build_property.AvaloniaUseCompiledBindingsByDefault = true
 build_property.AvaloniaMainPackageVersion = 12.1.0
 build_property.AvaloniaPreviewerNetCoreToolPath = C:\Users\caha1\.nuget\packages\avalonia\12.1.0\buildTransitive\\..\tools\net8.0\designer\Avalonia.Designer.HostApp.dll
-build_property.AvaloniaResourcePaths = C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\add.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\arrow.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\battery.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\edit.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\excel.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\eye.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\headphones.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\keyboard.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\MenuBar\apps.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\MenuBar\brush.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\MenuBar\contacts.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\MenuBar\key.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\MenuBar\monitor.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\MenuBar\paint.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\MenuBar\pc.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\MenuBar\phone.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\MenuBar\printer.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\MenuBar\processor.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\MenuBar\rutoken.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\MenuBar\server.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\MenuBar\todo.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\MenuBar\usb.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\MenuBar\users.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\microphone.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\mouse.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\ok.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\remove.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\save.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\scan.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\scanner.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\sound.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Images\sudinfologo.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\Assets\Icons\logo.ico,C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\logo.ico
+build_property.AvaloniaResourcePaths = C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\add.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\arrow.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\battery.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\edit.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\excel.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\eye.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\headphones.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\keyboard.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\MenuBar\apps.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\MenuBar\brush.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\MenuBar\contacts.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\MenuBar\key.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\MenuBar\monitor.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\MenuBar\paint.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\MenuBar\pc.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\MenuBar\phone.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\MenuBar\printer.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\MenuBar\processor.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\MenuBar\rutoken.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\MenuBar\server.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\MenuBar\todo.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\MenuBar\usb.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\MenuBar\users.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\microphone.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\mouse.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\ok.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\remove.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\save.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\scan.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\scanner.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\sound.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Images\sudinfologo.png,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Assets\Icons\logo.ico,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\logo.ico,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\App.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Pages\AppsPage.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Pages\CartridgesPage.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Pages\ComputersPage.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Pages\ContactsPage.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Pages\MonitorsPage.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Pages\PasswordsPage.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Pages\PeripheryPage.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Pages\PhonesPage.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Pages\PrintersPage.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Pages\RutokensPage.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Pages\ServersPage.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Pages\TasksPage.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Pages\UsersPage.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Pages\WorkplacesPage.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Windows\AppWindow.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Windows\CartridgeWindow.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Windows\ComputerWindow.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Windows\ContactWindow.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Windows\MainWindow.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Windows\MonitorWindow.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Windows\PasswordWindow.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Windows\PeripheryWindow.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Windows\PhoneWindow.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Windows\PrinterWindow.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Windows\RutokenWindow.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Windows\ServerRackWindow.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Windows\ServerWindow.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Windows\TaskWindow.axaml,C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\Views\Windows\UserWindow.axaml
 build_property.TargetFramework = net10.0-windows
 build_property.TargetFrameworkIdentifier = .NETCoreApp
 build_property.TargetFrameworkVersion = v10.0
@@ -21,99 +21,99 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SudInfo.Avalonia
-build_property.ProjectDir = C:\Users\caha1\RiderProjects\sysadmin-inventory\src\SudInfo.Avalonia\
+build_property.ProjectDir = C:\Users\caha1\RiderProjects\sysadmin-inventory\SudInfo.Avalonia\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/App.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Pages/AppsPage.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Pages/AppsPage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Pages/CartridgesPage.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Pages/CartridgesPage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Pages/ComputersPage.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Pages/ComputersPage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Pages/ContactsPage.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Pages/ContactsPage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Pages/MonitorsPage.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Pages/MonitorsPage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Pages/PasswordsPage.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Pages/PasswordsPage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Pages/PeripheryPage.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Pages/PeripheryPage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Pages/PhonesPage.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Pages/PhonesPage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Pages/PrintersPage.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Pages/PrintersPage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Pages/RutokensPage.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Pages/RutokensPage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Pages/ServersPage.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Pages/ServersPage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Pages/TasksPage.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Pages/TasksPage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Pages/UsersPage.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Pages/UsersPage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Pages/WorkplacesPage.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Pages/WorkplacesPage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Windows/AppWindow.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Windows/AppWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Windows/CartridgeWindow.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Windows/CartridgeWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Windows/ComputerWindow.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Windows/ComputerWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Windows/ContactWindow.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Windows/ContactWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Windows/MainWindow.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Windows/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Windows/MonitorWindow.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Windows/MonitorWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Windows/PasswordWindow.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Windows/PasswordWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Windows/PeripheryWindow.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Windows/PeripheryWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Windows/PhoneWindow.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Windows/PhoneWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Windows/PrinterWindow.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Windows/PrinterWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Windows/RutokenWindow.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Windows/RutokenWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Windows/ServerRackWindow.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Windows/ServerRackWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Windows/ServerWindow.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Windows/ServerWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Windows/TaskWindow.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Windows/TaskWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/caha1/RiderProjects/sysadmin-inventory/src/SudInfo.Avalonia/Views/Windows/UserWindow.axaml]
+[C:/Users/caha1/RiderProjects/sysadmin-inventory/SudInfo.Avalonia/Views/Windows/UserWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

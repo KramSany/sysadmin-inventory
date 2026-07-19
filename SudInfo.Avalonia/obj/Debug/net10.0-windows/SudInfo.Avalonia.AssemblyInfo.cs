@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("DIMANRUS")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("2.6.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.6.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.6.0+2115a359268b1b82b3e0c01a26a9dc9622f3ea06")]
 [assembly: System.Reflection.AssemblyProductAttribute("SudInfo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SudInfo.Avalonia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("2.6.0.0")]

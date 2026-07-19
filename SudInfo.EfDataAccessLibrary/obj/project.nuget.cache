@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uRiLmi8Ggd0=",
+  "dgSpecHash": "JxJtYW4fJKA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\src\\SudInfo.EfDataAccessLibrary\\SudInfo.EfDataAccessLibrary.csproj",
+  "projectFilePath": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\SudInfo.EfDataAccessLibrary\\SudInfo.EfDataAccessLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\caha1\\.nuget\\packages\\closedxml\\0.105.0\\closedxml.0.105.0.nupkg.sha512",
     "C:\\Users\\caha1\\.nuget\\packages\\closedxml.parser\\2.0.0\\closedxml.parser.2.0.0.nupkg.sha512",
@@ -60,9 +60,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'SQLitePCLRaw.lib.e_sqlite3' 2.1.11 has a known high severity vulnerability, https://github.com/advisories/GHSA-2m69-gcr7-jv3q",
-      "projectPath": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\src\\SudInfo.EfDataAccessLibrary\\SudInfo.EfDataAccessLibrary.csproj",
+      "projectPath": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\SudInfo.EfDataAccessLibrary\\SudInfo.EfDataAccessLibrary.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\src\\SudInfo.EfDataAccessLibrary\\SudInfo.EfDataAccessLibrary.csproj",
+      "filePath": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\SudInfo.EfDataAccessLibrary\\SudInfo.EfDataAccessLibrary.csproj",
       "libraryId": "SQLitePCLRaw.lib.e_sqlite3",
       "targetGraphs": [
         "net10.0"

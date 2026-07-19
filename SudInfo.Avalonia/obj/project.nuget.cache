@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g1PLbIVOAUw=",
+  "dgSpecHash": "RbDxQRfoOgg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\src\\SudInfo.Avalonia\\SudInfo.Avalonia.csproj",
+  "projectFilePath": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\SudInfo.Avalonia\\SudInfo.Avalonia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\caha1\\.nuget\\packages\\avalonia\\12.1.0\\avalonia.12.1.0.nupkg.sha512",
     "C:\\Users\\caha1\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.27548.20260419\\avalonia.angle.windows.natives.2.1.27548.20260419.nupkg.sha512",
@@ -90,9 +90,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'SQLitePCLRaw.lib.e_sqlite3' 2.1.11 has a known high severity vulnerability, https://github.com/advisories/GHSA-2m69-gcr7-jv3q",
-      "projectPath": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\src\\SudInfo.Avalonia\\SudInfo.Avalonia.csproj",
+      "projectPath": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\SudInfo.Avalonia\\SudInfo.Avalonia.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\src\\SudInfo.Avalonia\\SudInfo.Avalonia.csproj",
+      "filePath": "C:\\Users\\caha1\\RiderProjects\\sysadmin-inventory\\SudInfo.Avalonia\\SudInfo.Avalonia.csproj",
       "libraryId": "SQLitePCLRaw.lib.e_sqlite3",
       "targetGraphs": [
         "net10.0-windows7.0"

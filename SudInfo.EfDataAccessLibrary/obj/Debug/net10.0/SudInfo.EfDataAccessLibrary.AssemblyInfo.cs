@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SudInfo.EfDataAccessLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2115a359268b1b82b3e0c01a26a9dc9622f3ea06")]
 [assembly: System.Reflection.AssemblyProductAttribute("SudInfo.EfDataAccessLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SudInfo.EfDataAccessLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
