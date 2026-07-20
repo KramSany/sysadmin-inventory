@@ -80,6 +80,21 @@ public partial class MonitorsPageViewModel : BaseRoutableViewModel
         await ExcelService.CreateExcelTableFromEntity(Monitors);
     }
 
+    public async Task ReadExcelTable()
+    {
+        var importedMonitor = await ExcelService.ReadExcelTableFromFile<Monitor>();
+        if (importedMonitor == null || importedMonitor.Count == 0) return;
+        var saveResult = await _monitorService.AddRange(importedMonitor);
+        if (!saveResult.Success)
+        {
+            await DialogService.ShowErrorMessageBox(saveResult.Message);
+        }
+        else
+        {
+            await LoadMonitors();
+        }
+    }
+
     public async Task OpenAddMonitorWindow()
     {
         await _navigationService.ShowMonitorWindowDialog(WindowType.Add, EventHandlerClosedWindowDialog);

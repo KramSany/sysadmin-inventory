@@ -7,7 +7,7 @@ public class MonitorService(
     {
         try
         {
-            var monitor = await context.Monitors.AsNoTracking()
+            var monitor = await context.Monitors
                 .FirstAsync(x => x.Id == id);
             context.Entry(monitor).State = EntityState.Deleted;
             context.Monitors.Remove(monitor);
@@ -25,7 +25,7 @@ public class MonitorService(
         try
         {
             if (monitor.Computer != null)
-                monitor.Computer = await context.Computers.AsNoTracking()
+                monitor.Computer = await context.Computers
                     .FirstAsync(x => x.Id == monitor.Computer.Id);
             context.Entry(monitor).State = EntityState.Added;
             await context.Monitors.AddAsync(monitor);
@@ -55,6 +55,34 @@ public class MonitorService(
                 Message = ex.Message
             };
         }
+    }
+
+    public async Task<Result> AddRange(IEnumerable<Monitor> monitor)
+    {
+        try
+        {
+            context.ChangeTracker.Clear();
+            foreach (var monitors in monitor)
+            {
+                if (monitors.Computer != null)
+                    monitors.Computer = await context.Computers.AsNoTracking()
+                        .SingleOrDefaultAsync(x => x.Id == monitors.Computer.Id);
+            }
+            await context.Monitors.AddRangeAsync(monitor);
+            await context.SaveChangesAsync();
+            return new Result(true);
+
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
+    
+    public void ClearTracker()
+    {
+        context.ChangeTracker.Clear();
     }
 
     #region Get Methods

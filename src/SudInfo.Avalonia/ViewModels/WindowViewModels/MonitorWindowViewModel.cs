@@ -77,6 +77,16 @@ public partial class MonitorWindowViewModel : BaseViewModel
                 monitorResult.Object.Computer = Computers.First(x => x.Id == monitorResult.Object.Computer.Id);
             Monitor = monitorResult.Object;
         }
+        else
+        {
+            if (windowType == WindowType.Add)
+            {
+                SaveButtonText = "Добавить монитор";
+                _monitorService.ClearTracker();
+                Monitor = new Monitor();
+            }
+            
+        }
     }
 
     public async Task SaveMonitor()
