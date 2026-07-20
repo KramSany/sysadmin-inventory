@@ -1,13 +1,13 @@
 ﻿namespace SudInfo.Avalonia.Services;
 
-public class PasswordService(
+public class  PasswordService(
     SudInfoDatabaseContext context) : BaseService<PasswordEntity>(context)
 {
     public async Task<Result> Remove(int id)
     {
         try
         {
-            var passwordEntity = await context.Passwords.AsNoTracking()
+            var passwordEntity = await context.Passwords
                 .FirstAsync(x => x.Id == id);
             context.Entry(passwordEntity).State = EntityState.Deleted;
             context.Passwords.Remove(passwordEntity);
@@ -18,6 +18,28 @@ public class PasswordService(
         {
             return new Result(message: ex.Message);
         }
+    }
+    
+    public async Task<Result> AddRange(IEnumerable<PasswordEntity> password)
+    {
+        try
+        {
+            ClearTracker();
+            await context.Passwords.AddRangeAsync(password);
+            await context.SaveChangesAsync();
+            return new Result(true);
+
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
+    
+    public void ClearTracker()
+    {
+        context.ChangeTracker.Clear();
     }
 
     #region Get Methods

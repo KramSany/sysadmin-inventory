@@ -74,6 +74,21 @@ public partial class PasswordsPageViewModel : BaseRoutableViewModel
         await ExcelService.CreateExcelTableFromEntity(Passwords);
     }
 
+    public async Task ReadExcelTable()
+    {
+        var importedPassword = await ExcelService.ReadExcelTableFromFile<PasswordEntity>();
+        if (importedPassword == null || importedPassword.Count == 0) return;
+        var saveResult = await _passwordService.AddRange(importedPassword);
+        if (!saveResult.Success)
+        {
+            await DialogService.ShowErrorMessageBox(saveResult.Message);
+        }
+        else
+        {
+            await LoadPasswords();
+        }
+    }
+
     public async Task LoadPasswords()
     {
         Passwords = await _passwordService.Get();
