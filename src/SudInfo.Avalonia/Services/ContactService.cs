@@ -7,7 +7,7 @@ public class ContactService(
     {
         try
         {
-            var entity = await context.Contacts.AsNoTracking()
+            var entity = await context.Contacts
                 .FirstAsync(x => x.Id == id);
             context.Entry(entity).State = EntityState.Deleted;
             context.Contacts.Remove(entity);
@@ -19,6 +19,28 @@ public class ContactService(
             return new Result(message: ex.Message);
         }
     }
+    
+    public async Task<Result> AddRange(IEnumerable<Contact> contacts)
+    {
+        try
+        {
+            context.ChangeTracker.Clear();
+            await context.Contacts.AddRangeAsync(contacts);
+            await context.SaveChangesAsync();
+            return new Result(true);
+        }
+        catch (Exception ex)
+        {
+            return new Result(message: ex.Message);
+        }
+    }
+    
+    public void ClearTracker()
+    {
+        context.ChangeTracker.Clear();
+    }
+    
+    
 
     #region Get Methods
 

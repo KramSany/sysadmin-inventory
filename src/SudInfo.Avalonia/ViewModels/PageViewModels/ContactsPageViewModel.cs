@@ -35,7 +35,7 @@ public partial class ContactsPageViewModel : BaseRoutableViewModel
 
     #region Collections
 
-    [Reactive] public partial IReadOnlyCollection<Contact>? Contacts { get; set; }
+    [Reactive] public partial IReadOnlyCollection<Contact>?Contacts { get; set; }
 
     #endregion
 
@@ -54,6 +54,22 @@ public partial class ContactsPageViewModel : BaseRoutableViewModel
         if (Contacts == null || Contacts.Count == 0)
             return;
         await ExcelService.CreateExcelTableFromEntity(Contacts);
+    }
+
+    public async Task ReadExcelTable()
+    {
+        var importedContacts = await ExcelService.ReadExcelTableFromFile<Contact>();
+        if (importedContacts == null || importedContacts.Count == 0) return;
+        var saveResult = await _contactService.AddRange(importedContacts);
+        if (saveResult.Success)
+        {
+            await LoadContacts();
+        }
+        else 
+        {
+            await DialogService.ShowErrorMessageBox(saveResult.Message);
+        }
+        
     }
 
     public async Task LoadContacts()
