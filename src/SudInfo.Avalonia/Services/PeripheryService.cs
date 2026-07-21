@@ -20,12 +20,36 @@ public class PeripheryService(
             return new Result(message: ex.Message);
         }
     }
+    
+    public async Task<Result> AddRange(IEnumerable<Periphery> peripherys)
+    {
+        try
+        {
+            context.ChangeTracker.Clear();
+            foreach (var periphery in peripherys)
+            {
+                if (periphery.Computer != null)
+                    periphery.Computer = await context.Computers.AsNoTracking()
+                        .SingleOrDefaultAsync(x => x.Id == periphery.Computer.Id);
+            }
+
+            await context.Peripheries.AddRangeAsync(peripherys);
+            await context.SaveChangesAsync();
+            return new Result(true);
+        }
+        catch (Exception ex)
+        {
+            return new Result(message: ex.Message);
+        }
+    }
+    
+    
 
     public async Task<Result> Remove(int id)
     {
         try
         {
-            var periphery = await context.Peripheries.AsNoTracking()
+            var periphery = await context.Peripheries
                 .FirstAsync(x => x.Id == id);
             context.Entry(periphery).State = EntityState.Deleted;
             context.Peripheries.Remove(periphery);

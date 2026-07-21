@@ -61,6 +61,21 @@ public partial class PeripheryPageViewModel : BaseRoutableViewModel
         await ExcelService.CreateExcelTableFromEntity(Peripheries);
     }
 
+    public async Task ReadExcelTable()
+    {
+        var importedPeriphery = await ExcelService.ReadExcelTableFromFile<Periphery>();
+        if (importedPeriphery == null || importedPeriphery.Count == 0) return;
+        var saveResult = await _peripheryService.AddRange(importedPeriphery);
+        if (!saveResult.Success)
+        {
+            await DialogService.ShowErrorMessageBox(saveResult.Message);
+        }
+        else
+        {
+            await LoadPeripheries();
+        }
+    }
+
     public async Task OpenAddPeripheryWindow()
     {
         await _navigationService.ShowPeripheryWindowDialog(WindowType.Add, EventHandlerClosedWindowDialog);
