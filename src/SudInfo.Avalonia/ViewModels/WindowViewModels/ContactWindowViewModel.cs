@@ -82,15 +82,6 @@ public partial class ContactWindowViewModel : BaseViewModel
 
             Contact = result.Object;
         }
-        else
-        {
-            if (windowType == WindowType.Add)
-            {
-                SaveButtonText = "Добавить контакт";
-                _contactService.ClearTracker();
-                Contact = new Contact();
-            }
-        }
     }
 
     #endregion

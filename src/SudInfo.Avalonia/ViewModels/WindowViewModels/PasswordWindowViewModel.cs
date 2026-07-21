@@ -82,15 +82,6 @@ public partial class PasswordWindowViewModel : BaseViewModel
 
             Password = result.Object;
         }
-        else
-        {
-            if (windowType == WindowType.Add)
-            {
-                SaveButtonText = "Добавить пароль";
-                _passwordService.ClearTracker();
-                Password = new PasswordEntity();
-            }
-        }
     }
 
     #endregion

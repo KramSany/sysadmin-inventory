@@ -90,15 +90,6 @@ public partial class CartridgeWindowViewModel : BaseViewModel
 
             Cartridge = result.Object;
         }
-        else
-        {
-            if (windowType == WindowType.Add)
-            {
-                SaveButtonText = "Добавить картридж";
-                _cartridgeService.ClearTracker();
-                Cartridge = new Cartridge();
-            }
-        }
     }
 
     #endregion

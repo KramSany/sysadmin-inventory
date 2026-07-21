@@ -25,20 +25,20 @@ internal static class ServiceCollectionExtension
 
         #region Window view models
 
-        .AddScoped<AppWindowViewModel>()
-        .AddScoped<CartridgeWindowViewModel>()
-        .AddScoped<ComputerWindowViewModel>()
-        .AddScoped<ContactWindowViewModel>()
-        .AddScoped<PasswordWindowViewModel>()
-        .AddScoped<TaskWindowViewModel>()
-        .AddScoped<ServerRackWindowViewModel>()
-        .AddScoped<PeripheryWindowViewModel>()
-        .AddScoped<ServerWindowViewModel>()
-        .AddScoped<RutokenWindowViewModel>()
-        .AddScoped<UserWindowViewModel>()
-        .AddScoped<MonitorWindowViewModel>()
-        .AddScoped<PrinterWindowViewModel>()
-        .AddScoped<PhoneWindowViewModel>()
+        .AddTransient<AppWindowViewModel>()
+        .AddTransient<CartridgeWindowViewModel>()
+        .AddTransient<ComputerWindowViewModel>()
+        .AddTransient<ContactWindowViewModel>()
+        .AddTransient<PasswordWindowViewModel>()
+        .AddTransient<TaskWindowViewModel>()
+        .AddTransient<ServerRackWindowViewModel>()
+        .AddTransient<PeripheryWindowViewModel>()
+        .AddTransient<ServerWindowViewModel>()
+        .AddTransient<RutokenWindowViewModel>()
+        .AddTransient<UserWindowViewModel>()
+        .AddTransient<MonitorWindowViewModel>()
+        .AddTransient<PrinterWindowViewModel>()
+        .AddTransient<PhoneWindowViewModel>()
 
         #endregion
 
