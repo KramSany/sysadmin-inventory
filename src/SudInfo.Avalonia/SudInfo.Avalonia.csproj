@@ -8,15 +8,15 @@
         <ApplicationIcon>logo.ico</ApplicationIcon>
         <UserSecretsId>763ce0ec-33ba-4d5c-8763-c5bdb43d3112</UserSecretsId>
         <ImplicitUsings>disable</ImplicitUsings>
-        <Company>DIMANRUS</Company>
+        <Company>KramSany</Company>
         <Product>SudInfo</Product>
-        <Copyright>DIMANRUS</Copyright>
-        <PackageProjectUrl>https://github.com/DIMANRUS/SudInfo</PackageProjectUrl>
+        <Copyright>KramSany</Copyright>
+        <PackageProjectUrl>https://github.com/KramSany/sysadmin-inventory</PackageProjectUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
-        <RepositoryUrl>https://github.com/DIMANRUS/SudInfo</RepositoryUrl>
+        <RepositoryUrl>https://github.com/KramSany/sysadmin-inventory</RepositoryUrl>
         <Title>СудИнфо</Title>
         <Version>2.6.0</Version>
-        <Authors>DIMANRUS</Authors>
+        <Authors>KramSany</Authors>
         <LangVersion>latest</LangVersion>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
