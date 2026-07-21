@@ -21,11 +21,33 @@ public class PhoneService(
         }
     }
 
+    public async Task<Result> AddRange(IEnumerable<Phone> phones)
+    {
+        try
+        {
+            context.ChangeTracker.Clear();
+            foreach (var phone in phones)
+            {
+                if (phone.User != null)
+                    phone.User = await context.Users
+                        .SingleOrDefaultAsync(x => x.Id == phone.User.Id);
+            }
+
+            await context.Phones.AddRangeAsync(phones);
+            await context.SaveChangesAsync();
+            return new Result(true);
+        }
+        catch (Exception ex)
+        {
+            return new Result(message: ex.Message);
+        }
+    }
+
     public async Task<Result> Remove(int id)
     {
         try
         {
-            var phone = await context.Phones.AsNoTracking()
+            var phone = await context.Phones
                 .FirstAsync(x => x.Id == id);
             context.Entry(phone).State = EntityState.Deleted;
             context.Remove(phone);
