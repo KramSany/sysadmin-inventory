@@ -113,6 +113,21 @@ public partial class PhonesPageViewModel : BaseRoutableViewModel
         await ExcelService.CreateExcelTableFromEntity(Phones);
     }
 
+    public async Task ReadExcelTable()
+    {
+        var importedPhones = await ExcelService.ReadExcelTableFromFile<Phone>();
+        if (importedPhones == null || importedPhones.Count == 0) return;
+        var saveResult = await _phoneService.AddRange(importedPhones);
+        if (!saveResult.Success)
+        {
+            await DialogService.ShowErrorMessageBox(saveResult.Message);
+        }
+        else
+        {
+            await LoadPhones();
+        }
+    }
+
     public async Task LoadPhones()
     {
         SearchText = string.Empty;

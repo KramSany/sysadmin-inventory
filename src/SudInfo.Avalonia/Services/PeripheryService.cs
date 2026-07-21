@@ -42,8 +42,6 @@ public class PeripheryService(
             return new Result(message: ex.Message);
         }
     }
-    
-    
 
     public async Task<Result> Remove(int id)
     {

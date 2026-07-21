@@ -10,6 +10,7 @@ public static class ExcelService
         if (App.MainWindow == null)
             return;
         using XLWorkbook wb = new();
+        
 
         var ws = wb.Worksheets.Add(nameof(entity));
         ws.Cell(1, 1).InsertTable(entity);
