@@ -65,7 +65,11 @@ public class Computer : BaseModel
     public bool IsDecommissioned { get; set; }
 
     [XLColumn(Ignore = true)]
+    [ForeignKey(nameof(UserId))]
     public User? User { get; set; }
+    
+    [XLColumn(Header = "ID Пользователя")]
+    public int? UserId { get; set; }
 
     [XLColumn(Header = "Личное")]
     public bool IsPersonal { get; set; }

@@ -8,8 +8,11 @@ public class ComputerService(
         try
         {
             if (computer.User != null)
-                computer.User = await context.Users.AsNoTracking()
-                    .SingleOrDefaultAsync(x => x.Id == computer.User.Id);
+            {
+                computer.UserId = computer.User.Id;
+                computer.User = null;
+            }
+            
             context.Entry(computer).State = EntityState.Added;
             await context.AddAsync(computer);
             await context.SaveChangesAsync();
@@ -44,9 +47,16 @@ public class ComputerService(
             context.ChangeTracker.Clear();
             foreach (var computer in computers)
             {
-                if (computer.User != null)
-                    computer.User = await context.Users.AsNoTracking()
-                        .SingleOrDefaultAsync(x => x.Id == computer.User.Id);
+                if (computer.UserId.HasValue && computer.UserId.Value > 0)
+                {
+                    
+                    computer.User = null;
+                }
+                else if (computer.User != null)
+                {
+                    computer.UserId = computer.User.Id;
+                    computer.User = null;
+                }
             }
 
             await context.Computers.AddRangeAsync(computers);

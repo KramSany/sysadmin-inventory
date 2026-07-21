@@ -8,8 +8,11 @@ public class PhoneService(
         try
         {
             if (phone.User != null)
-                phone.User = await context.Users.AsNoTracking()
-                    .FirstAsync(x => x.Id == phone.User.Id);
+            {
+                phone.UserId = phone.User.Id;
+                phone.User = null;
+            }
+            
             context.Entry(phone).State = EntityState.Added;
             await context.AddAsync(phone);
             await context.SaveChangesAsync();
@@ -28,9 +31,16 @@ public class PhoneService(
             context.ChangeTracker.Clear();
             foreach (var phone in phones)
             {
-                if (phone.User != null)
-                    phone.User = await context.Users
-                        .SingleOrDefaultAsync(x => x.Id == phone.User.Id);
+                if (phone.UserId.HasValue && phone.UserId.Value > 0)
+                {
+                    
+                    phone.User = null;
+                }
+                else if (phone.User != null)
+                {
+                    phone.UserId = phone.User.Id;
+                    phone.User = null;
+                }
             }
 
             await context.Phones.AddRangeAsync(phones);

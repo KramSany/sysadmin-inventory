@@ -136,8 +136,10 @@ public static class ExcelService
 
                         prop.SetValue(item, value);
                     }
-                    catch
+                    catch (Exception ex)
                     {
+                        System.Diagnostics.Debug.WriteLine($"Ошибка импорта Excel: {ex.Message}");
+                        return null; 
                     }
                 }
             }

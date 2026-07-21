@@ -31,7 +31,11 @@ public class Phone : BaseModel
 
     [XLColumn(Header = "Списан")]
     public bool IsDecommissioned { get; set; }
+    
+    [XLColumn(Header = "ID Сотрудника")]
+    public int? UserId { get; set; }
 
     [XLColumn(Ignore = true)]
+    [ForeignKey(nameof(UserId))]
     public User? User { get; set; }
 }
