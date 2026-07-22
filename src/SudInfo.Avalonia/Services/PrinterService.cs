@@ -21,6 +21,33 @@ public class PrinterService(
         }
     }
 
+    public async Task<Result> AddRange(IEnumerable<Printer> printers)
+    {
+        try
+        {
+            context.ChangeTracker.Clear();
+            foreach (var printer in printers)
+            {
+                if (printer.ComputerId.HasValue && printer.ComputerId.Value > 0)
+                {
+                    printer.Computer = null;
+                }
+                else if (printer.Computer != null)
+                {
+                    printer.ComputerId = printer.Computer.Id;
+                    printer.Computer = null;
+                }
+            }
+            await context.Printers.AddRangeAsync(printers);
+            await context.SaveChangesAsync();
+            return new Result(true);
+        }
+        catch (Exception ex)
+        {
+            return new Result(message: ex.Message);
+        }
+    }
+
     public async Task<Result> Remove(int id)
     {
         try

@@ -43,7 +43,12 @@ public class Printer : BaseModel
     [XLColumn(Header = "Списан")]
     public bool IsDecommissioned { get; set; }
 
+    [XLColumn(Ignore = true)]
+    [ForeignKey(nameof(ComputerId))]
     public Computer? Computer { get; set; }
+    
+    [XLColumn(Header = "ID Компьютера")]
+    public int? ComputerId { get; set; }
 
     [XLColumn(Header = "Номер кабинета")]
     [NotMapped]
