@@ -84,11 +84,17 @@ public partial class PrintersPageViewModel : BaseRoutableViewModel
     {
         var importedPrinters = await ExcelService.ReadExcelTableFromFile<Printer>();
 
-        if (importedPrinters != null && importedPrinters.Count > 0)
+        if (importedPrinters == null || importedPrinters.Count == 0) return;
+        var saveResult = await _printersService.AddRange(importedPrinters);
+        if (!saveResult.Success)
         {
-            Printers = importedPrinters;
-            PrintersFromDataBase = importedPrinters;
+            await DialogService.ShowErrorMessageBox(saveResult.Message);
         }
+        else
+        {
+            await LoadPrinters();
+        }
+        
     }
 
     public async Task OpenAddPrinterWindow()

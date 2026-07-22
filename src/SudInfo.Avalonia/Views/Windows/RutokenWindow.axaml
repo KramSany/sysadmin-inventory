@@ -16,7 +16,7 @@
     WindowStartupLocation="CenterOwner"
     mc:Ignorable="d">
     <i:Interaction.Behaviors>
-        <ia:EventTriggerBehavior EventName="Initialized">
+        <ia:EventTriggerBehavior EventName="Loaded">
             <ia:InvokeCommandAction Command="{Binding LoadUsers}" />
         </ia:EventTriggerBehavior>
     </i:Interaction.Behaviors>

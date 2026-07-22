@@ -50,7 +50,7 @@ public class Printer : BaseModel
     [XLColumn(Header = "ID Компьютера")]
     public int? ComputerId { get; set; }
 
-    [XLColumn(Header = "Номер кабинета")]
+    [XLColumn(Header = "Номер кабинета", Ignore =  true)]
     [NotMapped]
     public int Cabinet => Computer == null ? NumberCabinet : Computer.Cabinet;
 }
