@@ -8,10 +8,13 @@ public class PrinterService(
         try
         {
             if (printer.Computer != null)
-                printer.Computer = await context.Computers.AsNoTracking()
-                    .FirstAsync(x => x.Id == printer.Computer.Id);
+            {
+                printer.ComputerId = printer.Computer.Id;
+                printer.Computer = null;
+            }
+            
             context.Entry(printer).State = EntityState.Added;
-            await context.Printers.AddAsync(printer);
+            await context.AddAsync(printer);
             await context.SaveChangesAsync();
             return new Result(true);
         }

@@ -42,8 +42,6 @@ public partial class PrinterWindowViewModel : BaseViewModel
             }
 
             IsComputer = printerResult.Object?.Computer != null;
-            if (printerResult.Object?.Computer != null)
-                printerResult.Object.Computer = Computers.First(x => x.Id == printerResult.Object.Computer.Id);
             Printer = printerResult.Object;
         }
     }
@@ -73,6 +71,11 @@ public partial class PrinterWindowViewModel : BaseViewModel
     public async Task LoadComputers()
     {
         Computers = await _computerService.Get();
+
+        if (Printer?.Computer != null && Computers != null)
+        {
+            Printer.Computer = Computers.FirstOrDefault(x => x.Id == Printer.Computer.Id);
+        }
     }
 
     #endregion
@@ -89,7 +92,9 @@ public partial class PrinterWindowViewModel : BaseViewModel
 
     public static IEnumerable<PrinterType> PrinterTypes => Enum.GetValues<PrinterType>();
 
-    [Reactive] public partial IReadOnlyCollection<Computer>? Computers { get; private set; }
+    [Reactive] 
+    public partial IReadOnlyCollection<Computer> Computers { get; private set; } = Array.Empty<Computer>();
+
 
     #endregion
 
