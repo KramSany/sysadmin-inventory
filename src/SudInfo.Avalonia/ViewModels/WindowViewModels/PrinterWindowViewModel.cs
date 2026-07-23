@@ -28,6 +28,8 @@ public partial class PrinterWindowViewModel : BaseViewModel
     {
         _windowType = windowType;
         _closedWindow = close;
+        
+        await LoadComputers();
 
         if (windowType != WindowType.View)
             IsButtonVisible = true;

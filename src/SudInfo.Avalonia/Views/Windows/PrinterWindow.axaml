@@ -15,11 +15,6 @@
     CanResize="False"
     WindowStartupLocation="CenterOwner"
     mc:Ignorable="d">
-    <i:Interaction.Behaviors>
-        <ia:EventTriggerBehavior EventName="Loaded">
-            <ia:InvokeCommandAction Command="{Binding LoadComputers}" />
-        </ia:EventTriggerBehavior>
-    </i:Interaction.Behaviors>
     <Grid Margin="2"
           ColumnDefinitions="*,*"
           RowDefinitions="*,50">

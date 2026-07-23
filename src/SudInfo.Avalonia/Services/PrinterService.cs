@@ -7,10 +7,13 @@ public class PrinterService(
     {
         try
         {
-            if (printer.Computer != null)
-                printer.Computer = await context.Computers.AsNoTracking()
-                    .FirstAsync(x => x.Id == printer.Computer.Id);
-            context.Entry(printer).State = EntityState.Added;
+            int? selectedComputerId = printer.Computer?.Id;
+            
+            printer.Computer = null;
+            printer.ComputerId = selectedComputerId;
+            
+            context.ChangeTracker.Clear();
+            
             await context.Printers.AddAsync(printer);
             await context.SaveChangesAsync();
             return new Result(true);
@@ -67,21 +70,17 @@ public class PrinterService(
 
     public override async Task<Result> Update(Printer printer)
     {
-        /*        try
-                {*/
-        var entity = await context.Printers.Include(x => x.Computer)
-            .FirstAsync(x => x.Id == printer.Id);
-        entity.Computer = printer.Computer;
+        int? selectedComputerId = printer.Computer?.Id;
+        
+        printer.Computer = null;
+        printer.ComputerId = selectedComputerId;
+        
+        context.ChangeTracker.Clear();
+        context.Printers.Update(printer);
+        
         await context.SaveChangesAsync();
         return new Result(true);
-        /*        }
-                catch (Exception ex)
-                {
-                    return new()
-                    {
-                        Message = ex.Message
-                    };
-                }*/
+       
     }
 
     #region Get Methods
