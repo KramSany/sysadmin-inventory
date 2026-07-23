@@ -12,7 +12,7 @@
     xmlns:vm="using:SudInfo.Avalonia.ViewModels.PageViewModels"
     x:DataType="vm:PrintersPageViewModel">
     <i:Interaction.Behaviors>
-        <ia:EventTriggerBehavior EventName="Loaded">
+        <ia:EventTriggerBehavior EventName="Initialized">
             <ia:InvokeCommandAction Command="{Binding LoadPrinters}" />
         </ia:EventTriggerBehavior>
     </i:Interaction.Behaviors>
