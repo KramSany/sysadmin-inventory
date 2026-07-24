@@ -31,7 +31,7 @@
 
 * **Устройства:** `Computer`, `Server`, `ServerRack`, `Printer`, `Peripheral`, `Cartridge`, `Phone`, `Monitor`.
 * **Администрирование:** `User`, `AppSetting`, `TaskEntity`.
-* **Безопасность:** `PasswordEntity`, `Autoken`.
+* **Безопасность:** `PasswordEntity`, `Rutoken`.
 
 ## 📜 Лицензия и благодарность
 
