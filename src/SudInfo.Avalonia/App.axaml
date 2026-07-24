@@ -34,7 +34,7 @@
         </Style>
         <Style Selector="StackPanel">
             <Setter Property="Spacing" Value="2" />
-        </Style>
+        </Style> 
         <!--#endregion-->
         <!--#region Styles classes-->
         <Style Selector="TextBlock.PageHeader">
