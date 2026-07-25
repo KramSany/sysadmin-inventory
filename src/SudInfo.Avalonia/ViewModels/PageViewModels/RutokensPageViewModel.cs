@@ -52,6 +52,23 @@ public partial class RutokensPageViewModel : BaseRoutableViewModel
             return;
         await ExcelService.CreateExcelTableFromEntity(Rutokens);
     }
+    
+    public async Task ReadExcelTable()
+    {
+        var importedRutokens = await ExcelService.ReadExcelTableFromFile<Rutoken>();
+
+        if (importedRutokens == null || importedRutokens.Count == 0) return;
+        var saveResult = await _rutokenService.AddRange(importedRutokens);
+        if (!saveResult.Success)
+        {
+            await DialogService.ShowErrorMessageBox(saveResult.Message);
+        }
+        else
+        {
+            await LoadRutokens();
+        }
+        
+    }
 
     public async Task OpenAddRutokenWindow()
     {

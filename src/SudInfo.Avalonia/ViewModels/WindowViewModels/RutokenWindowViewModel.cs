@@ -73,6 +73,7 @@ public partial class RutokenWindowViewModel : BaseViewModel
 
     public async void Initialization(WindowType windowType, Action close, int? id = null)
     {
+        LoadUsers();
         _windowType = windowType;
         _closedWindow = close;
 

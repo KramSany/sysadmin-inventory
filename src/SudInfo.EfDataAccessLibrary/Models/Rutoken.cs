@@ -12,6 +12,10 @@ public class Rutoken : BaseModel
 
     [XLColumn(Header = "Дата окончания действия сертификата")]
     public DateTime? EndDateCertificate { get; set; } = DateTime.Now.AddYears(1);
-
+    
+    public int? UserId { get; set; }
+    
+    [XLColumn(Ignore = true)]
+    [ForeignKey(nameof(UserId))]
     public User? User { get; set; }
 }

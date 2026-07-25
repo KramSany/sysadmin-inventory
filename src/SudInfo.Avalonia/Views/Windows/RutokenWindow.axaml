@@ -15,11 +15,6 @@
     CanResize="False"
     WindowStartupLocation="CenterOwner"
     mc:Ignorable="d">
-    <i:Interaction.Behaviors>
-        <ia:EventTriggerBehavior EventName="Loaded">
-            <ia:InvokeCommandAction Command="{Binding LoadUsers}" />
-        </ia:EventTriggerBehavior>
-    </i:Interaction.Behaviors>
     <StackPanel Margin="10" Spacing="5">
         <TextBox
             MaxLength="30"

@@ -38,13 +38,13 @@ public class MonitorService(
         }
     }
 
-    public override async Task<Result> Update(Monitor monitor)
+    public override async Task<Result> Update(Monitor rutoken)
     {
         try
         {
             var entity = await context.Monitors.Include(x => x.Computer)
-                .FirstAsync(x => x.Id == monitor.Id);
-            entity.Computer = monitor.Computer;
+                .FirstAsync(x => x.Id == rutoken.Id);
+            entity.Computer = rutoken.Computer;
             await context.SaveChangesAsync();
             return new Result(true);
         }

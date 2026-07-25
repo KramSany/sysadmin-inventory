@@ -11,12 +11,12 @@ public class BaseService<T>(
 
     #region Methods
 
-    public virtual async Task<Result> Update(T entity)
+    public virtual async Task<Result> Update(T rutoken)
     {
         try
         {
-            context.Entry(entity).State = EntityState.Modified;
-            context.Update(entity);
+            context.Entry(rutoken).State = EntityState.Modified;
+            context.Update(rutoken);
             await context.SaveChangesAsync();
             return new Result(true);
         }

@@ -22,22 +22,22 @@ public class AppService(
         }
     }
 
-    public override async Task<Result> Update(AppEntity entity)
+    public override async Task<Result> Update(AppEntity rutoken)
     {
         try
         {
             var app = await context.Apps.Include(x => x.Computers)
-                .FirstAsync(x => x.Id == entity.Id);
-            app.Name = entity.Name;
-            app.Version = entity.Version;
-            if (entity.Computers!.Count == 0)
+                .FirstAsync(x => x.Id == rutoken.Id);
+            app.Name = rutoken.Name;
+            app.Version = rutoken.Version;
+            if (rutoken.Computers!.Count == 0)
             {
                 app.Computers = null;
             }
             else
             {
                 app.Computers = [];
-                foreach (var computer in entity.Computers)
+                foreach (var computer in rutoken.Computers)
                     app.Computers.Add(await context.Computers.FindAsync(computer.Id));
             }
 

@@ -94,7 +94,6 @@ public partial class PrintersPageViewModel : BaseRoutableViewModel
         {
             await LoadPrinters();
         }
-        
     }
 
     public async Task OpenAddPrinterWindow()

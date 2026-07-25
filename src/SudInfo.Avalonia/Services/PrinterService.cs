@@ -68,15 +68,15 @@ public class PrinterService(
         }
     }
 
-    public override async Task<Result> Update(Printer printer)
+    public override async Task<Result> Update(Printer rutoken)
     {
-        int? selectedComputerId = printer.Computer?.Id;
+        int? selectedComputerId = rutoken.Computer?.Id;
         
-        printer.Computer = null;
-        printer.ComputerId = selectedComputerId;
+        rutoken.Computer = null;
+        rutoken.ComputerId = selectedComputerId;
         
         context.ChangeTracker.Clear();
-        context.Printers.Update(printer);
+        context.Printers.Update(rutoken);
         
         await context.SaveChangesAsync();
         return new Result(true);
