@@ -91,5 +91,21 @@ public partial class AppsPageViewModel : BaseRoutableViewModel
         await ExcelService.CreateExcelTableFromEntity(Apps);
     }
 
+    public async Task ReadExcelTable()
+    {
+        var importedAppEnity = await ExcelService.ReadExcelTableFromFile<AppEntity>();
+
+        if (importedAppEnity == null || importedAppEnity.Count == 0) return;
+        var saveResult = await _appService.AddRange(importedAppEnity);
+        if (!saveResult.Success)
+        {
+            await DialogService.ShowErrorMessageBox(saveResult.Message);
+        }
+        else
+        {
+            await LoadApps();
+        }
+        
+    }
     #endregion
 }

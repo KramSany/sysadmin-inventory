@@ -23,11 +23,12 @@
                    Classes="PageHeader" />
         <Image Grid.Column="2"
                Source="/Assets/Images/excel.png">
-            <i:Interaction.Behaviors>
-                <ia:EventTriggerBehavior EventName="Tapped">
-                    <ia:InvokeCommandAction Command="{Binding CreateExcelTable}" />
-                </ia:EventTriggerBehavior>
-            </i:Interaction.Behaviors>
+            <Image.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Command="{Binding ReadExcelTable }" Header="Импорт данных"></MenuItem>
+                    <MenuItem Command="{Binding CreateExcelTable }" Header="Экспорт данных"></MenuItem>
+                </ContextMenu>
+            </Image.ContextMenu>
         </Image>
         <Image Source="/Assets/Images/add.png"
                Grid.Column="3">
