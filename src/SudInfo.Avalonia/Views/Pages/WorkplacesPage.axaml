@@ -49,7 +49,7 @@
                                     Header="Кабинет" />
             </DataGrid.Columns>
             <DataGrid.RowDetailsTemplate>
-                <DataTemplate DataType="{x:Type models:AppEntity}">
+                <DataTemplate DataType="{x:Type models:User}">
                     <StackPanel>
                         <Button
                             HorizontalAlignment="Stretch"
