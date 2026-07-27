@@ -1,8 +1,8 @@
 # sysadmin-inventory
 
-[![C#](https://shields.io)](https://microsoft.com)
-[![Avalonia](https://shields.io)](https://avaloniaui.net)
-[![EF Core](https://shields.io)](https://microsoft.com)
+![Static Badge](https://img.shields.io/badge/release-v.2.7.0-blue)
+[![Static Badge](https://img.shields.io/badge/license-MIT-orange)](https://github.com/KramSany/sysadmin-inventory/blob/master/LICENSE)
+
 
 > Десктопное приложение для системного администратор. Учет техники, заметки и другое. (компьютеры, серверы, принтеры, периферия и.т.д).
 
@@ -13,8 +13,6 @@
 * **Язык программирования:** C# (.NET 10)
 * **База данных:** SQLite (Локальная БД)
 * **ORM:** Entity Framework Core
-
-## [Загрузка последней версии](https://github.com/KramSany/sysadmin-inventory/releases/tag/v2.7.0)
 
 ## Сборка
 
