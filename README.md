@@ -32,11 +32,7 @@
 * **Устройства:** `Computer`, `Server`, `ServerRack`, `Printer`, `Peripheral`, `Cartridge`, `Phone`, `Monitor`.
 * **Администрирование:** `User`, `AppSetting`, `TaskEntity`.
 * **Безопасность:** `PasswordEntity`, `Rutoken`.
-
-## Лицензия и благодарность
-
-Этот проект распространяется под лицензией MIT. Подробности в файле `LICENSE`.
-
+  
 ### Благодарности
 Отдельная благодарность **DIMANRUS**, чей проект был взят за основу. 
 
