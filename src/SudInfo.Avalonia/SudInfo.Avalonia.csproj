@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <OutputType>EXE</OutputType>
+        <OutputType>WinExe</OutputType>
         <TargetFramework>net10.0-windows</TargetFramework>
         <Nullable>enable</Nullable>
         <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
@@ -14,7 +14,7 @@
         <PackageProjectUrl>https://github.com/KramSany/sysadmin-inventory</PackageProjectUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <RepositoryUrl>https://github.com/KramSany/sysadmin-inventory</RepositoryUrl>
-        <Title>СудИнфо</Title>
+        <Title>sysadmin-inventory</Title>
         <Version>2.6.0</Version>
         <Authors>KramSany</Authors>
         <LangVersion>latest</LangVersion>
