@@ -26,7 +26,7 @@
 
  Склонируйте репозиторий:
    ```bash
-   git clone [https://github.com](https://github.com/KramSany/sysadmin-inventory.git)
+   git clone https://github.com](https://github.com/KramSany/sysadmin-inventory.git
    ```
 
 ## Основные сущности системы (Models)
