@@ -72,6 +72,22 @@ public partial class UsersPageViewModel : BaseRoutableViewModel
             return;
         await ExcelService.CreateExcelTableFromEntity(Users);
     }
+    
+    public async Task ReadExcelTable()
+    {
+        var importedUsers = await ExcelService.ReadExcelTableFromFile<User>();
+
+        if (importedUsers == null || importedUsers.Count == 0) return;
+        var saveResult = await _userService.AddRange(importedUsers);
+        if (!saveResult.Success)
+        {
+            await DialogService.ShowErrorMessageBox(saveResult.Message);
+        }
+        else
+        {
+            await LoadUsers();
+        }
+    }
 
     public async Task OpenAddUserWindow()
     {

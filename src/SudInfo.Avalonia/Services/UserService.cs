@@ -7,10 +7,24 @@ public class UserService(
     {
         try
         {
-            var user = await context.Users.AsNoTracking()
+            var user = await context.Users
                 .FirstAsync(x => x.Id == id);
             context.Entry(user).State = EntityState.Deleted;
             context.Remove(user);
+            await context.SaveChangesAsync();
+            return new Result(true);
+        }
+        catch (Exception ex)
+        {
+            return new Result(message: ex.Message);
+        }
+    }
+    
+    public async Task<Result> AddRange(IEnumerable<User> users)
+    {
+        try
+        {
+            await context.Users.AddRangeAsync(users);
             await context.SaveChangesAsync();
             return new Result(true);
         }

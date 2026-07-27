@@ -5,16 +5,20 @@ public partial class UserWindowViewModel : BaseViewModel
     #region Services
 
     private readonly UserService _usersService;
+    private readonly ComputerService _computerService;
+    
+    
 
     #endregion
 
     #region Ctors
 
-    public UserWindowViewModel(UserService usersService)
+    public UserWindowViewModel(UserService usersService, ComputerService computerService)
     {
         #region Service Set
 
         _usersService = usersService;
+        _computerService = computerService;
 
         #endregion
     }
@@ -26,6 +30,8 @@ public partial class UserWindowViewModel : BaseViewModel
     [Reactive] public partial User User { get; set; } = new();
 
     [Reactive] public partial string SaveButtonText { get; private set; } = "Добавить пользователя";
+    
+    [Reactive] public partial IReadOnlyCollection<Computer>? Computers { get; private set; }
 
     #endregion
 
@@ -59,8 +65,11 @@ public partial class UserWindowViewModel : BaseViewModel
 
     public async void Initialization(WindowType windowType, Action close, int? id = null)
     {
+        await LoadComputers();
         _windowType = windowType;
         _closedWindow = close;
+        
+        
 
         if (id != null)
         {
@@ -74,6 +83,11 @@ public partial class UserWindowViewModel : BaseViewModel
 
             User = userResult.Object;
         }
+    }
+    
+    public async Task LoadComputers()
+    {
+        Computers = await _computerService.Get();
     }
 
     #endregion
