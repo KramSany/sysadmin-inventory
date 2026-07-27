@@ -15,7 +15,7 @@
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <RepositoryUrl>https://github.com/KramSany/sysadmin-inventory</RepositoryUrl>
         <Title>sysadmin-inventory</Title>
-        <Version>2.6.0</Version>
+        <Version>2.7.0</Version>
         <Authors>KramSany</Authors>
         <LangVersion>latest</LangVersion>
     </PropertyGroup>
