@@ -14,13 +14,15 @@
 * **База данных:** SQLite (Локальная БД)
 * **ORM:** Entity Framework Core
 
-## Установка и запуск
+## [Загрузка последней версии](https://github.com/KramSany/sysadmin-inventory/releases/tag/v2.7.0)
 
-### Требования
+## Сборка
+
+1. Требования
 * Установленный [.NET SDK](https://microsoft.com) актуальной версии.
 * Среда разработки Rider или Visual Studio 2022 с расширением Avalonia.
 
-### Быстрый старт
+2. Быстрый старт
 
  Склонируйте репозиторий:
    ```bash
