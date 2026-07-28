@@ -8,7 +8,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:reactiveUi="http://reactiveui.net"
     xmlns:viewModels="clr-namespace:SudInfo.Avalonia.ViewModels.WindowViewModels;assembly=SudInfo.Avalonia"
-    Title="СудИнфо - Инженер v2.6.0"
+    Title="sysadmin-inventory v2.7.0"
     MinWidth="1000"
     MinHeight="700"
     x:DataType="viewModels:MainWindowViewModel"

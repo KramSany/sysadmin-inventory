@@ -1,6 +1,6 @@
 ﻿<component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Publish Win-x64 Release" type="DotNetFolderPublish" factoryName="Publish to folder">
-    <riderPublish configuration="Release" delete_existing_files="true" platform="Any CPU" ready_to_run="true" self_contained="true" target_folder="$PROJECT_DIR$/src/SudInfo.Avalonia/bin/Release/net10.0-windows/win-x64/publish" target_framework="net10.0-windows" uuid_high="3887946511009059348" uuid_low="-5782655479173978706">
+    <riderPublish configuration="Release" include_all_content_for_self_extract="true" include_native_libs_for_self_extract="true" platform="Any CPU" produce_single_file="true" ready_to_run="true" self_contained="true" target_folder="$PROJECT_DIR$/src/SudInfo.Avalonia/bin/Release/net10.0-windows/win-x64/publish" target_framework="net10.0-windows" uuid_high="3887946511009059348" uuid_low="-5782655479173978706">
       <runtimes>
         <item value="win-x64" />
       </runtimes>
