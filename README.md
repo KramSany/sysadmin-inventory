@@ -1,6 +1,6 @@
 # sysadmin-inventory
 
-[![Static Badge](https://img.shields.io/badge/release-v.2.7.0-blue)](https://github.com/KramSany/sysadmin-inventory/releases/tag/v2.7.0)
+[![Static Badge](https://img.shields.io/badge/release-v.2.7.1-blue)](https://github.com/KramSany/sysadmin-inventory/releases/tag/v2.7.1)
 [![Static Badge](https://img.shields.io/badge/license-MIT-orange)](https://github.com/KramSany/sysadmin-inventory/blob/master/LICENSE)
 
 
